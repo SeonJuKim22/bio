@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import url('default.css');
+body{position:relative;font-size:14px;line-height:1.6em; color:#333;font-family:'NanumS','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+
+/* 본문바로가기  */
+html,body {height:100%;}
+.contents_login{position:relative;min-width:1280px;height:100%;margin:0 auto;}
+.contents_login:before{position:absolute;left:0;top:0;display:inline-block;width:100%;height:100%;content:'';background:url(../images/layout/layout_bg.png) center top no-repeat ;background-size:cover;}
+#contents {position:absolute;left:0;top:50%;width:100%;transform:translate(0,-50%);}
+#contents .contents_box {width:400px; margin:0 auto; padding-bottom:50px; text-align:center; background:url(../images/layout/login_bg.png) center top no-repeat; background-size:cover; border-radius:10px;  box-shadow: 3.536px 3.536px 10px 0px rgba(0, 0, 0, 0.15);}
+#contents .contents_box h1 {display:block; padding-top:65px; padding-bottom:40px; font-size:30px; line-height:32px; letter-spacing:-1px; color:#fff; font-weight:600;}
+#contents .contents_box .cont_box{margin-left:60px; margin-right:60px;}
+#contents .contents_box .cont_box .login_list li {text-align:left; padding:11px 20px 11px 30px; margin-bottom:10px; border-radius:50px;   box-shadow: 2.121px 2.121px 5px 0px rgba(0, 0, 0, 0.1); background-color:#fff;}
+#contents .contents_box .cont_box .login_list li label {display:inline-block; width:65px; font-size:16px;vertical-align:middle; line-height:23px; font-weight:600; letter-spacing:-0.05rem; color:#767f90; font-family:'NanumS';}
+#contents .contents_box .cont_box .login_list li input{display:inline-block;width:145px;/*font-family:'Poppins';*/;vertical-align:middle;  font-size:14px;line-height:20px;color:#333;border:none;}
+#contents .contents_box .cont_box .login_check {display:flex; justify-content: center; margin-bottom:30px;text-align:center; }
+#contents .contents_box .cont_box .login_check li {margin-left:20px;}
+#contents .contents_box .cont_box .login_check li:first-child  {margin-left:0;}
+#contents .contents_box .cont_box .login_check li input{display:inline-block;  width: 15px;  height: 15px; margin:0; vertical-align:-1px;border-width: 1px;border-color: rgb(102, 102, 102);border-style: solid;border-radius: 3px;/*opacity: 0.502;*/}
+#contents .contents_box .cont_box .login_check li label{display:inline-block; margin-left:7px; font-size:14px;line-height:16px;color:#666;letter-spacing:-1px;vertical-align:middle;}
+#contents .contents_box .cont_box input[type="submit"]{display:inline-block;width:100%;height:50px;padding:0;margin:0;font-family:'NanumS';font-size:20px;line-height:50px;font-weight:700;color:#fff;border:none;border-radius:50px;;background-color:#4e61b5;overflow:hidden;}
+#contents .login_help {margin-top:20px; line-height:20px; text-align:center; color:#666;}
+#contents .login_guide {margin-top:60px; text-align:enter;}
+#contents .login_guide span {display:block; }

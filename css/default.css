@@ -1,0 +1,74 @@
+﻿@charset "UTF-8";
+
+/* reset style */
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block;}
+audio,canvas,progress,video{display:inline-block;}
+html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li,blockquote,pre,button,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,iframe,article,aside,canvas,details,embed,figure,figcaption,header,footer,menu,nav,section,summary,audio,video{margin:0;padding:0;border:0;font-size:inherit;font-family:inherit;vertical-align:baseline;}
+
+img,fieldset{border:none;}
+figure,figcaption{margin:0;padding:0;}
+b,strong{font-weight:600;}
+em,dfn,cite,address,i{font-style:normal;}
+mark{background-color:#ff0;color:#000;}
+small{font-size:90%;}
+sup,sub{position:relative;font-size: 0.9em;line-height:0;vertical-align:baseline;}
+sub{bottom:-0.25em;}
+sup{top:-0.5em;}
+del{text-decoration: line-through;}
+label{cursor:pointer;}
+
+ol,ul,li{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption{;width:1px;height:1px;margin:-1px 0 0;padding:0;background:none;font-size:1px;color:transparent;line-height:0;}
+legend{position:absolute;width:1px;height:1px;margin:0;padding:0;background:none;font-size:1px;color:transparent;line-height:0;}
+hr{visibility:hidden;overflow:hidden;position:absolute;height:0;width:0;font-size:0;line-height:0;}
+
+.clearfix:after{display:block;visibility:hidden;clear:both;content:'';overflow:hidden;width:0;height:0;font-size:0;line-height:0;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;}
+.hide{display:none;}
+.skip{position:absolute;width:1px;height:1px;margin:0;padding:0;background:none;font-size:1px;color:transparent;line-height:0;}
+
+a:link{color:#636363;text-decoration:none;}
+a:visited{color:#636363;text-decoration:none;}
+a:hover{color:#0030ae;text-decoration:underline;}
+a:active{color:#0030ae;text-decoration:underline;}
+
+/* 입력 form */
+input{font-size:inherit;font-family:inherit;color:inherit;vertical-align:middle;}
+input[type="file"]{border:none;}
+input[type="radio"],input[type="checkbox"]{border:none;}
+button{text-transform:none;vertical-align: middle;}
+button,[type="button"],[type="reset"],[type="submit"]{background-color:transparent;cursor: pointer;}
+select{font-size:inherit;font-family:inherit;color:inherit;text-transform:none;vertical-align:middle;}
+textarea{font-size:inherit;font-family:inherit;color:inherit;vertical-align:middle;resize:none;}
+input[disabled="disabled"]{background-color:#ebebeb;color:#959595;}
+select[disabled="disabled"]{background-color:#ebebeb;color:transparent;}
+
+/* 본문바로가기  */
+.accessibility{overflow:hidden;position:relative;z-index:1000;width:100%;}
+.accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center;}
+.accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:20px;margin:0;padding:8px 0 0 15px;background:#20262c;font-size:12px;font-weight:700;line-height:1;color:#fff;}
+
+
+body{position:relative;font-size:14px;line-height:1.6em;color:#333;font-family:'NanumS','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+a:link{color:#636363;text-decoration:none;}
+a:visited{color:#636363;text-decoration:none;}
+a:hover{color:#0030ae;text-decoration:underline;}
+a:active{color:#0030ae;text-decoration:underline;}
+
+/* 입력 form */
+
+input[type="submit"]{height:30px;line-height:24px;}
+input[type="radio"],input[type="checkbox"]{width:14px;height:14px;}
+input[type="image"]{height:auto;margin:0;padding:0;border:none;}
+input[type="file"]{height:auto;padding:0;}
+button{height:50px;padding:1px 3px;background-color:#fff;line-height:24px;}
+select{min-width:140px;height:30px;padding:1px 22px 1px 7px;text-align:left;border:solid 1px #ddd;background:url(../images/layout/select_arrow.png) 90% center no-repeat #fff;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+select::-ms-expand{display:none;}
+textarea{min-height:120px;padding:1px 3px;border:solid 1px #c6c6c6;line-height:25px;box-sizing:border-box;}
+
+html,body{min-height:100%;}
+
+
