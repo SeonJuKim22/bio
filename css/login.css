@@ -1,9 +1,8 @@
 @charset "utf-8";
 @import url('default.css');
-body{position:relative;font-size:14px;line-height:1.6em; color:#333;font-family:'NanumS','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+@import url('common.css');
 
-/* 본문바로가기  */
-html,body {height:100%;}
+/* 로그인  */
 .contents_login{position:relative;min-width:1280px;height:100%;margin:0 auto;}
 .contents_login:before{position:absolute;left:0;top:0;display:inline-block;width:100%;height:100%;content:'';background:url(../images/layout/layout_bg.png) center top no-repeat ;background-size:cover;}
 #contents {position:absolute;left:0;top:50%;width:100%;transform:translate(0,-50%);}

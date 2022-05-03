@@ -19,3 +19,13 @@
       url('font/NanumSquareB.woff2') format('woff2'),
       url('font/NanumSquareB.ttf') format('truetype');
 }
+
+@font-face {
+      font-family: 'NanumS';
+      font-weight: 700;
+      src: url('font/NanumSquareEB.eot');
+      src: url('font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+           url('font/NanumSquareEB.woff') format('woff'),
+           url('font/NanumSquareEB.woff2') format('woff2'),
+           url('font/NanumSquareEB.ttf') format('truetype');
+     }

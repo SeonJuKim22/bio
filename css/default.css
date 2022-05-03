@@ -46,29 +46,6 @@ textarea{font-size:inherit;font-family:inherit;color:inherit;vertical-align:midd
 input[disabled="disabled"]{background-color:#ebebeb;color:#959595;}
 select[disabled="disabled"]{background-color:#ebebeb;color:transparent;}
 
-/* 본문바로가기  */
-.accessibility{overflow:hidden;position:relative;z-index:1000;width:100%;}
-.accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center;}
-.accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:20px;margin:0;padding:8px 0 0 15px;background:#20262c;font-size:12px;font-weight:700;line-height:1;color:#fff;}
 
-
-body{position:relative;font-size:14px;line-height:1.6em;color:#333;font-family:'NanumS','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
-a:link{color:#636363;text-decoration:none;}
-a:visited{color:#636363;text-decoration:none;}
-a:hover{color:#0030ae;text-decoration:underline;}
-a:active{color:#0030ae;text-decoration:underline;}
-
-/* 입력 form */
-
-input[type="submit"]{height:30px;line-height:24px;}
-input[type="radio"],input[type="checkbox"]{width:14px;height:14px;}
-input[type="image"]{height:auto;margin:0;padding:0;border:none;}
-input[type="file"]{height:auto;padding:0;}
-button{height:50px;padding:1px 3px;background-color:#fff;line-height:24px;}
-select{min-width:140px;height:30px;padding:1px 22px 1px 7px;text-align:left;border:solid 1px #ddd;background:url(../images/layout/select_arrow.png) 90% center no-repeat #fff;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
-select::-ms-expand{display:none;}
-textarea{min-height:120px;padding:1px 3px;border:solid 1px #c6c6c6;line-height:25px;box-sizing:border-box;}
-
-html,body{min-height:100%;}
 
 
