@@ -44,8 +44,6 @@ button,[type="button"],[type="reset"],[type="submit"]{background-color:transpare
 select{font-size:inherit;font-family:inherit;color:inherit;text-transform:none;vertical-align:middle;}
 textarea{font-size:inherit;font-family:inherit;color:inherit;vertical-align:middle;resize:none;}
 input[disabled="disabled"]{background-color:#ebebeb;color:#959595;}
-select[disabled="disabled"]{background-color:#ebebeb;color:transparent;}
-
-
+select[disabled="disabled"]{background-color:#ebebeb;color:959595;}
 
 

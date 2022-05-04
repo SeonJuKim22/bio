@@ -295,9 +295,9 @@
 						<div class="head_tab_menu">
 							<div class="btn_wrap clearfix">
 								<div class="btn_left">
-									<button type="button" class="icon_btn type1 on"><span>차트</span></button><!--// 선택 되었을때 on처리 -->
+									<button type="button" class="icon_btn type1"><span>차트</span></button>
 									<button type="button" class="icon_btn type2"><span>위치정보</span></button>
-									<button type="button" class="icon_btn type3"><span>데이터</span></button>
+									<button type="button" class="icon_btn type3 on"><span>데이터</span></button><!--// 선택 되었을때 on처리 -->
 								</div>
 								<div class="btn_right">
 									<button type="button" class="icon_btn type4"><span>초기화</span></button>
@@ -307,10 +307,152 @@
 						<!--//head_tab_menu -->
 
 						<div id="contents" class="jsScrollBar"><!-- 컨텐츠 영역이 들어갑니다. width:882px height: 510px-->
-							<div id="chart" class="chart"><!-- 차트 들어갈 영역 -->
-								<img src="images/contents/test_img.png" alt="">
-							</div>
 
+							<table class="bbs_table">
+								<caption>리스트- 장치번호, 맥어드레스, 수집일시, 심박수, 칼로리, 걸음수 , 거리등의 정보 제공</caption>
+								<colgroup>
+									<col style="width:100px;">
+									<col style="width:140px;">
+									<col>
+									<col style="width:85px;">
+									<col style="width:85px;">
+									<col style="width:85px;">
+									<col style="width:85px;">
+									<col style="width:85px;">
+								</colgroup>
+								<thead>
+								<tr>
+									<th scope="col">장치번호</th>
+									<th scope="col">맥어드레스</th>
+									<th scope="col">수집일시</th>
+									<th scope="col">심박수</th>
+									<th scope="col">칼로리</th>
+									<th scope="col">걸음수</th>
+									<th scope="col">거리</th>
+									<th scope="col">지방소모량</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>dev0</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev1</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev2</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev3</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev4</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev5</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev6</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev7</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev8</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>2022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev9</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>22022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>dev10</td>
+										<td>CO:08:18:04:4E:44</td>
+										<td>22022-01-11 23:05:44.389247</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //bbs_default-->
+
+
+							<div class="btn_wrap clearfix">
+								<div class="btn_right">
+									<button type="button" class="icon_btn excel"><span>엑셀다운로드</span></button>
+								</div>
+							</div>
 
 						</div>
 						<!-- //contents -->

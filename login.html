@@ -14,63 +14,65 @@
 </head>
 
 <body id="main">
-	<div class="accessibility">
-		<a href="#contents">본문 바로가기</a>
-	</div>
-	<div class="contents_login">
-		<main id="contents">
-			<section>
-				<form>
-					<fieldset>
-						<legend>로그인</legend>
-						<div class="contents_box">
-							<h1>스마트 바이오정보</h1>
-							<div class="cont_box">
-								<ul class="login_list">
-									<li>
-										<label for="number">기관번호</label>
-										<input type="text" id="number" placeholder="">
-									</li>
-									<li>
-										<label for="id">아이디</label>
-										<input type="text" id="id" placeholder="">
-									</li>
-									<li>
-										<label for="password">패스워드</label>
-										<input type="password" id="password" placeholder="">
-									</li>
-								</ul>
-								<ul class="login_check">
-									<li>
+<div id="login_box">
+	<main id="contents">
+		<section>
+			<form>
+				<fieldset>
+					<legend>로그인</legend>
+					<div class="login_inner">
+						<h1>스마트 바이오정보</h1>
+						<div class="cont_box">
+							<ul class="login_list">
+								<li>
+									<label for="number">기관번호</label>
+									<input type="text" id="number">
+								</li>
+								<li>
+									<label for="id">아이디</label>
+									<input type="text" id="id">
+								</li>
+								<li>
+									<label for="pw">패스워드</label>
+									<input type="password" id="pw" name="" />
+								</li>
+							</ul>
+							<ul class="login_check">
+								<li>
+									<span class="check_box">
 										<input type="checkbox" id="save_number">
 										<label for="save_number">기관번호 저장</label>
-									</li>
-									<li>
-										<input type="checkbox" id="save_id">
-										<label for="save_id">아이디 저장</label>
-									</li>
-								</ul>
-								<input type="submit" id="login" value="로그인">
-							</div>
-							<!--//cont_box-->
-							<div class="text_box">
-								<p class="login_help">
-									아이디 또는 패스워드가 기억나지 않으시면<br>
-									관리자(02-1661-4836)에게 문의 바랍니다.
-								</p>
-								<p class="login_guide"> 
-									바이오 스마트시스템은 크롬에 최적화되어 있습니다.
-									<span>(C)COPYRIGHT SESEM 2022. All rights RESERVED</span>
-								</p>
-							</div>
-							<!--//text_box-->
+									</span>
+								</li>
+								<li>
+									<span class="check_box">
+									<input type="checkbox" id="save_id">
+									<label for="save_id">아이디 저장</label>
+									</span>
+								</li>
+							</ul>
+							<input type="submit" id="login" value="로그인">
 						</div>
-						<!--//contents_box-->
-					</fieldset>
-				</form>
-			</section>
-		</main>
-	</div>
-	<!--//contents_login -->
+						<!--//cont_box-->
+						<div class="text_box">
+							<p class="login_help">
+								아이디 또는 패스워드가 기억나지 않으시면<br>
+								관리자(02-1661-4836)에게 문의 바랍니다.
+							</p>
+							<p class="login_guide"> 
+								바이오 스마트시스템은 크롬에 최적화되어 있습니다.
+								<span>(C)COPYRIGHT SESEM 2022. All rights RESERVED</span>
+							</p>
+						</div>
+						<!--//text_box-->
+					</div>
+					<!--//contents_box-->
+				</fieldset>
+			</form>
+		</section>
+	</main>
+</div>
+<!--//login_box -->
+</div>
 </body>
 </html>

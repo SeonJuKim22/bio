@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* font-face */
 @font-face {
  font-family: 'NanumS';
@@ -22,10 +22,9 @@
 
 @font-face {
       font-family: 'NanumS';
-      font-weight: 700;
+      font-weight: 800;
       src: url('font/NanumSquareEB.eot');
       src: url('font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
            url('font/NanumSquareEB.woff') format('woff'),
-           url('font/NanumSquareEB.woff2') format('woff2'),
            url('font/NanumSquareEB.ttf') format('truetype');
      }
