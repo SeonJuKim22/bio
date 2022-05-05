@@ -156,8 +156,9 @@ button.btn {width:120px; height:38px; padding:0; font-size:16px; font-weight:800
 button.btn.blue {width:153px; background-color:#009ccb; color:#fff; border-color:#009ccb;}
 
 /* content */
-#contents {height:510px; margin:12px 0 0 0; padding:0 20px 0 0; box-sizing:border-box; font-size:14px;}
-
+#contents {position: relative; height:510px; margin:12px 0 0 0; padding:0 20px 0 0; box-sizing:border-box; font-size:14px;}
+.table_top {position: absolute; left:0; top:0; width:calc(100% - 20px); z-index:10;}
+.table_bottom {margin-top:37px;}
 /* 디자인 스크롤바 */
 .jsScrollBar {overflow-x:hidden;overflow-y:auto;position:relative;opacity:0;}
 .jsScrollBarInner {overflow-x:hidden;overflow-y:scroll;box-sizing:border-box;-ms-overflow-style:none;/* IE and Edge */scrollbar-width:none;}
@@ -172,6 +173,7 @@ button.btn.blue {width:153px; background-color:#009ccb; color:#fff; border-color
 .bbs_table {width:100%; margin:0 0 15px; border-collapse:collapse;}
 .bbs_table th,.bbs_table td {padding:11px 5px 10px; vertical-align:middle; word-break:break-all;}
 .bbs_table thead {border:1px solid #e9e9e9; box-shadow:0 3px 3px 0 rgba(0, 0, 0, 0.05);}
+.bbs_table thead tr {background-color:#fff;}
 .bbs_table thead th {font-size:14px; color:#333; letter-spacing:-0.06px; font-weight:600; text-align:left; border-bottom:none; background-color:transparent;}
 .bbs_table thead th:first-child, .bbs_table tbody td:first-child {padding-left:20px;}
 .bbs_table tbody td {border-bottom:1px solid #e9e9e9; text-align:left; color:#333; font-size:12px; line-height:14px; letter-spacing:0;}
