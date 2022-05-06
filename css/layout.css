@@ -51,7 +51,8 @@
 #side .side_cont .search_box input[type="text"]::placeholder {outline:none; font-weight:400; color:rgba(255, 255, 255, 0.502);}
 #side .side_cont .search_box input::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.502);}
 #side .side_cont .search_box input:-ms-input-placeholder {color:rgba(255, 255, 255, 0.502);}
-#side .side_cont .search_box .btn_search {display:inline-block; position: absolute; right:0; top:0; width:16px; height:100%; padding:0; background:url(../images/layout/icon_search.png) no-repeat center center; color: transparent;}
+#side .side_cont .search_box .btn_search {display:inline-block; position: absolute; right:0; top:0; width:16px; height:100%; padding:0;  color: transparent;}
+#side .side_cont .search_box .btn_search:before {display:inline-block; content:''; position: absolute; left:0; top:5px; width:16px; height:16px; background:url(../images/layout/icon_search.png) no-repeat center center; background-size:cover;}
 #side .side_cont .search_box .btn_search:hover, #side .side_cont .search_box .btn_search:focus{outline:0;}
 
 /* 페이징 */
@@ -93,7 +94,7 @@
 .form_box .date_em {position: relative; width:12px; margin:0 8px;}
 .form_box .date_em:before {display:inline-block; content:''; position:absolute; left:0;top:50%; width:12px; height:2px; background-color:#8f8f8f;}
 .form_box .date_wrap button {display:inline-block; position:absolute; top:-1px; right:-1px; width:53px; height:38px; margin:0; padding:0; vertical-align:middle; color: transparent;}
-.form_box .date_wrap button:after {content:''; display:inline-block; overflow: hidden;  position:absolute; top:10px; left:17px;width: 19px; height: 19px; background-image: url(../images/layout/btn_bg.png);background-repeat: no-repeat;background-position: -90px 0;}
+.form_box .date_wrap button:after {content:''; display:inline-block; overflow: hidden;  position:absolute; top:10px; left:17px;width: 18px; height:18px; background: url(../images/layout/icon_calendar.png)  no-repeat center center; background-size:cover;}
 .form_box .btn_wrap {display:inline-block; margin-left:8px;}
 .form_box .date_wrap input[type="text"]:focus {outline:none;}
 
@@ -169,16 +170,16 @@ button.icon_btn.type2 span:after {width:13px; height:18px; margin-top:-10px; bac
 button.icon_btn.type2.on span:after {background-image:url(../images/layout/btn_type2_on.png);}
 
 button.icon_btn.type3 span {padding-left:25px;}
-button.icon_btn.type3 span:after {width:20px; height:19px; margin-top:-9px; background-image:url(../images/layout/btn_type3_off.png);}
+button.icon_btn.type3 span:after {width:19px; height:17px; margin-top:-9px; background-image:url(../images/layout/btn_type3_off.png);}
 button.icon_btn.type3.on span:after {background-image:url(../images/layout/btn_type3_on.png);}
 
 button.icon_btn.type4 span {padding-left:23px;}
-button.icon_btn.type4 span:after {width:16px; height:20px; margin-top:-10px; background-image:url(../images/layout/btn_type4.png);}
+button.icon_btn.type4 span:after {width:15px; height:18px; margin-top:-10px; background-image:url(../images/layout/btn_type4_off.png);}
 
 
 button.icon_btn.excel {width:170px;}
-button.icon_btn.excel span {padding-left:20px;}
-button.icon_btn.excel span:after {width:15px; height:18px; margin-top:-10px; background-position:-125px 0;}
+button.icon_btn.excel span {padding-left:25px;}
+button.icon_btn.excel span:after {width:21px; height:22px; margin-top:-12px; background-image:url(../images/layout/btn_excel.png);}
 
 button.btn {width:120px; height:38px; padding:0; font-size:17px; line-height:38px;  font-weight:800; color:#333; border:1px solid #9ca1ab; border-radius: 50px; box-sizing:border-box;}
 button.btn.blue {width:153px; background-color:#009ccb; color:#fff; border-color:#009ccb;}
