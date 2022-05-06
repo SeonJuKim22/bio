@@ -160,17 +160,22 @@ button.icon_btn.on {background-color:#009ccb; border-color:#009ccb}
 button.icon_btn.on span {color:#fff;}
 
 button.icon_btn span {display:inline-block; position:relative; height:40px; margin:0; line-height:40px; text-decoration:none;text-align:center;vertical-align:top;}
-button.icon_btn span:after {content:''; overflow:hidden; display:inline-block;position: absolute; left:0; top:50%; /*background:url(../images/layout/btn_bg2.png) no-repeat;*/background-size: 148px auto; vertical-align:middle;}
-button.icon_btn.type1 span:after {width:23px; height:18px; margin-top:-10px; background:url(../images/layout/btn_type1_off.png) no-repeat;  background-position:0 0; background-size:100% 100%;}
+button.icon_btn span:after {content:''; overflow:hidden; display:inline-block;position: absolute; left:0; top:50%;background-position:0 0; background-size:100% 100%; background-repeat:no-repeat; vertical-align:middle;}
+button.icon_btn.type1 span:after {width:23px; height:18px; margin-top:-10px; background-image:url(../images/layout/btn_type1_off.png);}
 button.icon_btn.type2 span {padding-left:20px;}
-button.icon_btn.type1.on span:after {background-image:url(../images/layout/btn_type1_on.png)}
-button.icon_btn.type2 span:after {width:13px; height:20px; margin-top:-10px; background-position:-31px 0;}
-button.icon_btn.type2.on span:after {background-position:-31px bottom;}
+button.icon_btn.type1.on span:after {background-image:url(../images/layout/btn_type1_on.png);}
+
+button.icon_btn.type2 span:after {width:13px; height:18px; margin-top:-10px; background-image:url(../images/layout/btn_type2_off.png);}
+button.icon_btn.type2.on span:after {background-image:url(../images/layout/btn_type2_on.png);}
+
 button.icon_btn.type3 span {padding-left:25px;}
-button.icon_btn.type3 span:after {width:20px; height:19px; margin-top:-9px; background-position:-62px 0;}
-button.icon_btn.type3.on span:after {background-position:-62px bottom;}
+button.icon_btn.type3 span:after {width:20px; height:19px; margin-top:-9px; background-image:url(../images/layout/btn_type3_off.png);}
+button.icon_btn.type3.on span:after {background-image:url(../images/layout/btn_type3_on.png);}
+
 button.icon_btn.type4 span {padding-left:23px;}
-button.icon_btn.type4 span:after {width:16px; height:20px; margin-top:-10px; background-position:-94px 0;}
+button.icon_btn.type4 span:after {width:16px; height:20px; margin-top:-10px; background-image:url(../images/layout/btn_type4.png);}
+
+
 button.icon_btn.excel {width:170px;}
 button.icon_btn.excel span {padding-left:20px;}
 button.icon_btn.excel span:after {width:15px; height:18px; margin-top:-10px; background-position:-125px 0;}
