@@ -9,8 +9,10 @@
 	<meta name="description" content="사이트 상세설명" />
 	<link rel="stylesheet" href="css/font.css" />
 	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/sub.js"></script>
+	<script src="js/jquery.mCustomScrollbar.js"></script>
 	<title>스마트 바이오정보</title>
 </head>
 
@@ -30,7 +32,7 @@
 							<div class="side_cont">
 								<h1>새샘<br>노인복지센터</h1><!--제목명이 들어갑니다.-->
 							</div>
-							<!-- //수급자 side_cont -->
+							<!-- //side_cont -->
 
 							<div class="side_cont">
 								<h2>수급자 리스트</h2>
@@ -39,7 +41,7 @@
 										<fieldset>
 											<legend>상단검색</legend>
 											<div class="sel_list">
-												<span class="search_selbox">
+												<span class="search_selbox ">
 													<select class="js_select width90" title="선택">
 														<option>전체항목</option>
 														<option>Option02</option>
@@ -69,7 +71,7 @@
 
 											<div class="sel_list type2">
 												<span class="search_selbox">
-													<select class="js_select" title="선택">
+													<select class="js_select " title="선택">
 														<option>수급중</option>
 														<option>옵션</option>
 													</select>
@@ -187,7 +189,6 @@
 							<!-- //side_cont -->
 						</div>
 						<!-- //side -->
-
 						<main class="colgroup" id="colgroup">
 							<article>
 								<header class="clearfix">
@@ -292,26 +293,271 @@
 									<!--//right_box -->
 								</header>
 								<!--//header -->
-
 								<div class="head_tab_menu">
 									<div class="btn_wrap clearfix">
 										<div class="btn_left">
-											<button type="button" class="icon_btn type1 on"><span>차트</span></button><!--// 선택 되었을때 on처리 -->
-											<button type="button" class="icon_btn type2"><span>위치정보</span></button>
-											<button type="button" class="icon_btn type3"><span>데이터</span></button>
+											<ul class="tab_list clearfix">
+												<li class="on"><a href="#"  class="idx_chart"><span class="icon_btn type1">차트</span></a></li><!--활성화 on-->
+												<li><a href="#" class="idx_map"><span class="icon_btn type2">위치정보</span></a></li>
+												<li><a href="#" class="idx_data"><span class="icon_btn type3">데이터</span></a></li>
+											</ul>
 										</div>
+										<!--//btn_left-->
+									
 										<div class="btn_right">
 											<button type="button" class="icon_btn type4"><span>초기화</span></button>
 										</div>
+										<!--//btn_right -->
 									</div>
+									<!--//btn_wrap -->
 								</div>
 								<!--//head_tab_menu -->
 
-								<div id="contents" class="jsScrollBar"><!-- 컨텐츠 영역이 들어갑니다. width:882px height: 510px-->
 								<!-- 컨텐츠 영역 시작 -->
-									<div id="chart" class="chart"><!-- 차트 들어갈 영역 -->
-										<img src="images/contents/test_img.png" alt="">
+								<div id="contents"> <!-- 컨텐츠 영역이 들어갑니다. width:882px height: 510px-->
+
+									<!-- 차트 컨텐츠 -->
+									<div class="tab_cont idx_chart active"><!-- 활성화 active-->
+										<div class="tab_wrap">
+											<div id="chart" class="chart">
+												<img src="images/contents/test_img.png" alt=""><!-- 차트 들어갈 영역 -->
+											</div>
+										</div>
 									</div>
+									<!--//차트 컨텐츠 -->
+
+
+									<!-- 지도 컨텐츠 -->
+									<div class="tab_cont idx_map">
+										<div class="tab_wrap">
+											<div id="map" class="map">
+												<img src="images/contents/map_img.png" alt=""><!-- 지도 영역 -->
+											</div>
+										</div>
+									</div>
+									<!-- //지도 컨텐츠 -->
+
+
+									<!-- 데이터 -->
+									<div class="tab_cont idx_data">
+										<div class="table_top"><!--테이블 제목 고정입니다.-->
+											<table class="bbs_table">
+												<caption>리스트- 장치번호, 맥어드레스, 수집일시, 심박수, 칼로리, 걸음수 , 거리등의 정보 제공</caption>
+												<colgroup>
+													<col style="width:100px;">
+													<col style="width:140px;">
+													<col>
+													<col style="width:85px;">
+													<col style="width:85px;">
+													<col style="width:85px;">
+													<col style="width:85px;">
+													<col style="width:85px;">
+												</colgroup>
+												<thead>
+												<tr>
+													<th scope="col" class='fixedHeader'>장치번호</th>
+													<th scope="col" class='fixedHeader'>맥어드레스</th>
+													<th scope="col" class='fixedHeader'>수집일시</th>
+													<th scope="col" class='fixedHeader'>심박수</th>
+													<th scope="col" class='fixedHeader'>칼로리</th>
+													<th scope="col" class='fixedHeader'>걸음수</th>
+													<th scope="col" class='fixedHeader'>거리</th>
+													<th scope="col" class='fixedHeader'>지방소모량</th>
+												</tr>
+												</thead>
+											</table>
+										</div>
+										<!--//table_top -->
+										<div class="tab_wrap">
+											<div class="table_bottom"><!-- tbody 내용이 들어갑니다. -->
+												<table class="bbs_table">
+													<colgroup>
+														<col style="width:100px;">
+														<col style="width:140px;">
+														<col>
+														<col style="width:85px;">
+														<col style="width:85px;">
+														<col style="width:85px;">
+														<col style="width:85px;">
+														<col style="width:85px;">
+													</colgroup>
+													<tbody>
+														<tr>
+															<td>dev0</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev1</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev2</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev3</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev4</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev5</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev6</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev7</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev8</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>2022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev9</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>dev10</td>
+															<td>CO:08:18:04:4E:44</td>
+															<td>22022-01-11 23:05:44.389247</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+											<!-- //table_bottom -->
+										
+
+											<div class="btn_wrap clearfix">
+												<div class="btn_right">
+													<button type="button" class="icon_btn excel"><span>엑셀다운로드</span></button>
+												</div>
+											</div>
+											<!-- //btn_wrap -->
+										</div>
+									</div>
+									<!-- //데이터 -->
 
 								<!-- 컨텐츠 영역 끝 -->
 								</div>
@@ -321,10 +567,10 @@
 						 <!-- //colgroup -->
 					</div>
 					<!-- //index_inner -->
-				 </div>
-				 <!-- //wrap -->
 				</div>
+				<!--//wrap-->
 			</div>
+			<!--//container_inner -->
 		</div>
 		<!-- //container_wrap -->
 	</div>

@@ -2,9 +2,12 @@ $(window).on('load', function(){
 	jaAllReset();
 });
 
+
+
 /* 전체 함수 호출 */
 function jaAllReset(){
-	tab_box();//텝메뉴
+	//jsScrollBar();//디자인 스크롤바
+
 	/* 폼요소 */
 	//jsChk();라디오, 체크박스
 	jsFormFocus();//폼 요소 포커스
@@ -25,7 +28,7 @@ function jsChk(){
 }
 */
 /* 셀렉트박스 */
-var selectShowLen = 5;//보여줄 옵션 개수
+var selectShowLen = 3;//보여줄 옵션 개수
 var selectCloseSpd = 100;//셀렉트 닫는 속도
 var selectOpenSpd = 200;//셀렉트 여는 속도
 
@@ -108,10 +111,14 @@ function jsSelect(select){
 			//스크롤 생성시 레이어 넓이 설정
 			if($btnOption.length > 3){
 				$selectbox.find('.select_layer').css('right', '0');
-				$selectbox.find('.select_layer').addClass('select_Scroll');
 			}
 
-			
+			//셀렉트 박스 전체 높이 출력
+			$selectbox.find('.select_layer').each(function(){
+				var hei = $(this).outerHeight();
+
+				$(this).attr('data', hei);
+			});
 
 			//선택
 			$btnOption.eq(onIdx).addClass('active').attr('title', '선택됨');
@@ -119,7 +126,7 @@ function jsSelect(select){
 			var selTop = $btnOption.eq(onIdx).position().top;
 
 			if(maxHei < selTop){
-				$selectbox.find('.select_layer').scrollTop(selTop - (optionHei * 1));
+				$selectbox.find('.select_layer').scrollTop(selTop - (optionHei * 2));
 			}
 
 			$selectbox.find('.select_layer').hide();
@@ -237,56 +244,29 @@ function jsFormFocus(){
 		$(this).closest('.form_area').removeClass('focus');
 	});
 }
+/*
+	* 디자인 스크롤바
 
-function tab_box(){
-	/* 메인 탭 */
-	if(typeof ('.tab_list') !== "undifined"){
-		$('.tab_list > li > a').on('click', function(){
-			if($(this).hasClass('tab_blank')){
-				return;
-			}else{
-				var tab_name = $(this).attr('class');
-				$(this).closest('.colgroup').find('.tab_cont').removeClass('active');
-				$(this).closest('.colgroup').find('.tab_list > li').removeClass('on');
-				$(this).parent('li').addClass('on');
-				$('.tab_cont.'+ tab_name +'').addClass('active');
-				return false;
-			}
-		}); 
-	}
-}
-
-//스크롤 디자인
-(function($){
-	$(window).load(function(){
-	   //기본
-	   $(".tab_wrap").mCustomScrollbar();
-	   
-	   $(".tab_wrap").mCustomScrollbar({
-		  
-		   //테마
-		   theme:"light",
-		   //마우스휠 속도
-		   mouseWheelPixels: 800,
-		   //ajax 적용시
-	   });
-	   $(".select_Scroll").mCustomScrollbar({
-		  
-		   //테마
-		   theme:"dark-2",
-		   //마우스휠 속도
-		   mouseWheelPixels: 900,
-		   //ajax 적용시
-	   });
-	    
-
-	   
+	jsScrollBar();
+	jsScrollBar('class명');
+	jsScrollBar('class명', function(){
+		//콜백영역
 	});
-})(jQuery);
+*/
 
 
+	$(function() {
+		fn_scroll_plugin();
+	});
 
-
+	// jQuery Scroll Plugin 적용
+	function fn_scroll_plugin() {
+		$(".scrollbar").mCustomScrollbar({
+			theme : "rounded-dots", // 테마 적용
+			mouseWheelPixels : 300, // 마우스휠 속도
+			scrollInertia : 400 // 부드러운 스크롤 효과 적용
+		});
+	}
 
 
 
